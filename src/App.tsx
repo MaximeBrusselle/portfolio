@@ -1,35 +1,26 @@
-import { createSignal } from 'solid-js'
-import solidLogo from './assets/solid.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { MainLayout } from "@/layouts/MainLayout";
+import { Route, Router, RouteSectionProps } from "@solidjs/router";
+import { Home } from "@/pages/Home";
+import { Education } from "@/pages/Education";
+import { Contact } from "@/pages/Contact";
+import { Experience } from "@/pages/Experience";
+import { Skills } from "@/pages/Skills";
+import { Testimonials } from "@/pages/Testimonials";
+import { Projects } from "@/pages/Projects";
+import { Component } from "solid-js";
 
 function App() {
-  const [count, setCount] = createSignal(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://solidjs.com" target="_blank">
-          <img src={solidLogo} class="logo solid" alt="Solid logo" />
-        </a>
-      </div>
-      <h1>Vite + Solid</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count()}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p class="read-the-docs">
-        Click on the Vite and Solid logos to learn more
-      </p>
-    </>
-  )
+    <Router root={MainLayout as Component<RouteSectionProps<unknown>>}>
+      <Route path="/" component={Home} />
+      <Route path="/education" component={Education} />
+      <Route path="/experience" component={Experience} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/skills" component={Skills} />
+      <Route path="/testimonials" component={Testimonials} />
+      <Route path="/contact" component={Contact} />
+    </Router>
+  );
 }
 
-export default App
+export default App;
