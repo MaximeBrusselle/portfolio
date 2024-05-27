@@ -22,11 +22,15 @@ module.exports = {
 			mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.sans],
 		},
 		extend: {
-      colors: {
-        primary: "#1c1c22",
-        secondary: "#f0f0f0",
-        accent: "#a020f0"
-      },
+			colors: {
+				primary: "#1c1c22",
+				secondary: "#f0f0f0",
+				accent: {
+					DEFAULT: "#00ff99",
+					hover: "#00e187",
+				},
+				background: "0 0% 100%",
+			},
 			keyframes: {
 				"accordion-down": {
 					from: { height: "0" },
