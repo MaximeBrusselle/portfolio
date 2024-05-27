@@ -8,7 +8,7 @@ interface MainLayoutProps {
 export const MainLayout = (props: MainLayoutProps) => {
     const { children } = props;
 	return (
-		<div class="w-screen h-screen">
+		<div class="w-full h-screen">
 			<Header />
 			{children}
 		</div>

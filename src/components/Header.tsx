@@ -12,7 +12,7 @@ export const Header = () => {
 						Maxime<span class="text-accent">.</span>
 					</h1>
 				</A>
-				<div class="hidden xl:flex items-start gap-8">
+				<div class="hidden xl:flex items-center gap-8">
 					<Nav />
 					<A href="/contact">
 						<Button>Contact</Button>

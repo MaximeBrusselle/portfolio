@@ -1,3 +1,9 @@
 export function Home() {
-	return <div>Home</div>;
+	return (
+		<div class="h-full">
+			<div class="container mx-auto">
+				<div>Homepage</div>
+			</div>
+		</div>
+	);
 }
