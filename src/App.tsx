@@ -1,12 +1,12 @@
 import { MainLayout } from "@/layouts/MainLayout";
 import { Route, Router, RouteSectionProps } from "@solidjs/router";
-import { Home } from "@/pages/Home";
-import { Education } from "@/pages/Education";
-import { Contact } from "@/pages/Contact";
-import { Experience } from "@/pages/Experience";
-import { Skills } from "@/pages/Skills";
-import { Testimonials } from "@/pages/Testimonials";
-import { Projects } from "@/pages/Projects";
+import { Home } from "@/pages/home/Home";
+import { Education } from "@/pages/education/Education";
+import { Contact } from "@/pages/contact/Contact";
+import { Experience } from "@/pages/experience/Experience";
+import { Skills } from "@/pages/skills/Skills";
+import { Testimonials } from "@/pages/testimonials/Testimonials";
+import { Projects } from "@/pages/projects/Projects";
 import { Component } from "solid-js";
 
 function App() {

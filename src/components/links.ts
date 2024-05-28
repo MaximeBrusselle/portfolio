@@ -1,9 +1,9 @@
-interface Link {
+interface NavItem {
 	name: string;
 	path: string;
 }
 
-const links: Link[] = [
+const links: NavItem[] = [
 	{ name: "Education", path: "/education" },
 	{ name: "Experience", path: "/experience" },
 	{ name: "Projects", path: "/projects" },
@@ -11,5 +11,5 @@ const links: Link[] = [
 	{ name: "Testimonials", path: "/testimonials" },
 ];
 
-export type { Link };
+export type { NavItem };
 export { links };
