@@ -17,7 +17,7 @@ export function Photo() {
         <div class="avatar relative h-full w-full">
             <div class="aspect-square w-[298px] rounded-full ring ring-accent ring-offset-8 ring-offset-primary xl:w-[498px]">
                 <Show when={loading()}>
-                    <Skeleton class="aspect-square w-[298px] shrink-0 rounded-full bg-gray-500/20 xl:w-[498px]" />
+                    <Skeleton class="w-full h-full shrink-0 rounded-full bg-gray-500/20" />
                 </Show>
                 <img
                     src={PFP}
