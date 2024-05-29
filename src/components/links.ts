@@ -4,6 +4,7 @@ interface NavItem {
 }
 
 const links: NavItem[] = [
+    { name: "Home", path: "/" },
     { name: "Education", path: "/education" },
     { name: "Experience", path: "/experience" },
     { name: "Projects", path: "/projects" },

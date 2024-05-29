@@ -12,6 +12,7 @@ export const Nav = () => {
                         class="font-medium capitalize transition-all hover:text-accent"
                         activeClass="text-accent border-b-2 border-accent"
                         inactiveClass=""
+                        end
                     >
                         {link.name}
                     </A>
