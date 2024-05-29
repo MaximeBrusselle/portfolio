@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 import { Facebook, Github, Instagram, Linkedin } from "lucide-solid";
-import { For, JSXElement, Match, Switch } from "solid-js";
+import { For, Match, Switch } from "solid-js";
 
 interface Social {
     name: string;
