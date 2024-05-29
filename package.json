@@ -1,31 +1,32 @@
 {
-  "name": "portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "bunx --bun vite",
-    "build": "tsc && bunx --bun vite build",
-    "preview": "bunx --bun vite preview",
-    "tsc": "tsc"
-  },
-  "dependencies": {
-    "@kobalte/core": "^0.13.1",
-    "@solidjs/router": "^0.13.3",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "lucide-solid": "^0.379.0",
-    "solid-js": "^1.8.15",
-    "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "vite-tsconfig-paths": "^4.3.2"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vite-plugin-solid": "^2.10.2"
-  }
+    "name": "portfolio",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "bunx --bun vite",
+        "build": "tsc && bunx --bun vite build",
+        "preview": "bunx --bun vite preview",
+        "tsc": "tsc"
+    },
+    "dependencies": {
+        "@kobalte/core": "^0.13.1",
+        "@solidjs/router": "^0.13.3",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "lucide-solid": "^0.379.0",
+        "prettier-plugin-tailwindcss": "^0.5.14",
+        "solid-js": "^1.8.15",
+        "tailwind-merge": "^2.3.0",
+        "tailwindcss-animate": "^1.0.7",
+        "vite-tsconfig-paths": "^4.3.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.38",
+        "tailwindcss": "^3.4.3",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0",
+        "vite-plugin-solid": "^2.10.2"
+    }
 }

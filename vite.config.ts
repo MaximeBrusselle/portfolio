@@ -3,10 +3,10 @@ import solid from "vite-plugin-solid";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-	plugins: [solid(), tsconfigPaths()],
-	resolve: {
-		alias: {
-			"@": "/src",
-		},
-	},
+    plugins: [solid(), tsconfigPaths()],
+    resolve: {
+        alias: {
+            "@": "/src",
+        },
+    },
 });

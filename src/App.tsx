@@ -10,17 +10,17 @@ import { Projects } from "@/pages/projects/Projects";
 import { Component } from "solid-js";
 
 function App() {
-  return (
-    <Router root={MainLayout as Component<RouteSectionProps<unknown>>}>
-      <Route path="/" component={Home} />
-      <Route path="/education" component={Education} />
-      <Route path="/experience" component={Experience} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/skills" component={Skills} />
-      <Route path="/testimonials" component={Testimonials} />
-      <Route path="/contact" component={Contact} />
-    </Router>
-  );
+    return (
+        <Router root={MainLayout as Component<RouteSectionProps<unknown>>}>
+            <Route path="/" component={Home} />
+            <Route path="/education" component={Education} />
+            <Route path="/experience" component={Experience} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/testimonials" component={Testimonials} />
+            <Route path="/contact" component={Contact} />
+        </Router>
+    );
 }
 
 export default App;

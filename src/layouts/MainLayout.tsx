@@ -7,10 +7,10 @@ interface MainLayoutProps {
 
 export const MainLayout = (props: MainLayoutProps) => {
     const { children } = props;
-	return (
-		<div class="w-full h-screen">
-			<Header />
-			{children}
-		</div>
-	);
+    return (
+        <div class="h-screen w-full">
+            <Header />
+            {children}
+        </div>
+    );
 };
