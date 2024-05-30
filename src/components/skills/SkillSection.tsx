@@ -1,7 +1,6 @@
 import { Skill } from "@/data/skills/skills";
 import { getImageUrl } from "@/libs/getImageUrl";
 import { For } from "solid-js";
-import { Progress } from "@/components/ui/progress";
 
 interface SkillSectionProps {
     title: string;

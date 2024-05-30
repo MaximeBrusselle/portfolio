@@ -1,6 +1,5 @@
 import { SkillSection } from "@/components/skills/SkillSection";
 import { skills, tools, libraries, languages } from "@/data/skills/skills";
-import { getImageUrl } from "@/libs/getImageUrl";
 import { For } from "solid-js";
 
 export function Skills() {
