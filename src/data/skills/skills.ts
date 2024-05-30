@@ -1,7 +1,6 @@
-interface Skill {
-    id: string;
-    name: string;
-    imgPath: string;
+import { Technology } from "@/data/experience/experience";
+
+type Skill = Technology & {
     stars: number;
     learning: boolean;
 }

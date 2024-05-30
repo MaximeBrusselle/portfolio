@@ -14,9 +14,9 @@ export function Education() {
                                         {education.id}
                                     </div>
                                     <div class="avatar">
-                                        <div class="aspect-square w-[70px] rounded-full bg-white">
+                                        <div class="aspect-square w-[100px] rounded-full bg-white">
                                             <img
-                                                class="h-full w-full rounded-full object-cover"
+                                                class="h-full w-full rounded-full object-contain"
                                                 src={
                                                     education.institution
                                                         .imgPath
@@ -25,18 +25,26 @@ export function Education() {
                                         </div>
                                     </div>
                                 </div>
-                                <h2 class="text-[42px] font-bold leading-none text-white transition-all duration-500 group-hover:text-accent">
-                                    {education.title}
-                                </h2>
-                                <div class="flex flex-col">
-                                    <p class="text-white/60">
-                                        {education.description} @ {education.institution.name}
-                                    </p>
-                                    <p class="text-white/60">📆 {education.startYear} - {education.endYear}</p>
+                                <div class="flex flex-col gap-3">
+                                    <h2 class="text-[42px] font-bold leading-none text-white transition-all duration-500 group-hover:text-accent">
+                                        {education.title}
+                                    </h2>
+                                    <div class="flex flex-col">
+                                        <p class="text-white/60">
+                                            {education.description} @{" "}
+                                            {education.institution.name}
+                                        </p>
+                                        <p class="text-white/60">
+                                            📆 {education.startYear} -{" "}
+                                            {education.endYear}
+                                        </p>
+                                    </div>
                                 </div>
                                 <Show when={education.steps.length > 0}>
                                     <div class="flex flex-col gap-2">
-                                        <h3 class="text-white">Specialisations</h3>
+                                        <h3 class="text-white">
+                                            Specialisations
+                                        </h3>
                                         <ol
                                             class="list-inside list-decimal"
                                             type="1"
