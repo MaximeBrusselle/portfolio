@@ -347,4 +347,6 @@ const libraries: Skill[] = [
     },
 ];
 
-export { skills, tools, libraries, languages };
+const amountOfSkills = skills.length + tools.length + libraries.length;
+
+export { skills, tools, libraries, languages, amountOfSkills };

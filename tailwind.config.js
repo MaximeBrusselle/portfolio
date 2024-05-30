@@ -38,6 +38,10 @@ module.exports = {
                 },
                 background: "0 0% 100%",
             },
+            flex: {
+                two: "50%",
+                third: "30%",
+            },
             keyframes: {
                 "accordion-down": {
                     from: { height: "0" },
