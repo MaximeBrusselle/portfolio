@@ -19,7 +19,6 @@ interface Technology {
     name: string;
     imgPath: string;
 }
-export type { Technology };
 
 const technologies: Technology[] = [
     {
@@ -83,7 +82,9 @@ const experiences: Experience[] = [
         company: companies[1],
         description: "Student Job",
         title: "IT Consultant",
-        technologies: [technologies[4], technologies[6], technologies[7]].sort((a, b) => a.name.localeCompare(b.name)),
+        technologies: [technologies[4], technologies[6], technologies[7]].sort(
+            (a, b) => a.name.localeCompare(b.name),
+        ),
         startYear: 2023,
         endYear: 2023,
     },
@@ -92,7 +93,14 @@ const experiences: Experience[] = [
         company: companies[0],
         description: "Internship",
         title: "Full Stack SAP Developer",
-        technologies: [technologies[0], technologies[1], technologies[2], technologies[3], technologies[4], technologies[5]].sort((a, b) => a.name.localeCompare(b.name)),
+        technologies: [
+            technologies[0],
+            technologies[1],
+            technologies[2],
+            technologies[3],
+            technologies[4],
+            technologies[5],
+        ].sort((a, b) => a.name.localeCompare(b.name)),
         startYear: 2024,
         endYear: 2024,
     },
